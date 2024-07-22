@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hiring mine</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body id="body">
+
+
+    <style>
+        /* The switch - the box around the slider */
+        .switch {
+            font-size: 17px;
+            position: relative;
+            display: inline-block;
+            width: 3.5em;
+            height: 2em;
+        }
+
+        /* Hide default HTML checkbox */
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        /* The slider */
+        .slider {
+            --background: #28096b;
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: var(--background);
+            transition: .5s;
+            border-radius: 30px;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 1.4em;
+            width: 1.4em;
+            border-radius: 50%;
+            left: 10%;
+            bottom: 15%;
+            box-shadow: inset 8px -4px 0px 0px #fff000;
+            background: var(--background);
+            transition: .5s;
+        }
+
+        input:checked+.slider {
+            background-color: #522ba7;
+        }
+
+        input:checked+.slider:before {
+            transform: translateX(100%);
+            box-shadow: inset 15px -4px 0px 15px #fff000;
+        }
+    </style>
+
+    <div class="nav">
+        <nav class="nav-bar">
+            <div class="logo"><img width="200px" src="./assets/logo.jpg" alt=""></div>
+            <div class="list">
+                <ul>
+                    <li><a class="one" href="" disabled>about us</a></li>
+                    <li><a class="two" href="">people</a></li>
+                    <li><a class="three" href="">jobs</a></li>
+                    <li><a class="four" href="">login</a></li>
+                    <li><a class="five" href="">join now</a></li>
+                    <li><a class="seven" href="">employee/post job</a></li>
+                </ul>
+            </div>
+            <div class="nav-button"> <label class="switch">
+                    <input onchange="mode()" id="light" type="checkbox">
+                    <span class="slider"></span>
+                </label> </div>
+        </nav>
+    </div>
+
+
+
+    <div class="secDiv">
+        <p>Dig. Apply</p>
+        <p>Prepare Your Future</p>
+    </div>
+
+    <div class="third-div">
+        <p>Hiring Mine connects employer and job seekers, where employers are the source </p>
+        <p> of the resources and the job
+            seeker can find and apply for their targeted job.</p>
+    </div>
+
+
+
+    <div class="fourDiv">
+
+        <div class="input-box">
+            <div class="relative">
+                <input class="input-cal input-base" id="input" placeholder="" type="text">
+                <label id="label-input">search by role or keyword</label>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="jobButton">
+        <button class="job">find job</button>
+    </div>
+
+
+
+    <div class="sixth-heading">
+        <p>popular searches </p>
+    </div>
+
+    <div class="main-job-list">
+
+        <div class="job-list">
+            <ul>
+                <li class="one-1"> <a href=""> software </a></li>
+                <li class="two-2"><a href="">developer</a></li>
+                <li class="three-3"><a href="">backend</a></li>
+                <li class="four-4"><a href="">backend</a></li>
+                <li class="five-5"><a href="">node</a></li>
+                <li class="six-6"><a href="">react native</a></li>
+                <li class="seven-7"><a href="">flutter</a></li>
+                <li class="eight-8"><a href="">UI/UX</a></li>
+
+            </ul>
+        </div>
+
+    </div>
+
+
+
+    <div class="main-job-list">
+
+        <div class="job-list second-list">
+            <ul>
+                <li class="one-1"> <a href=""> designer </a></li>
+                <li class="two-2"><a href="">web</a></li>
+                <li class="three-3"><a href="">SEO</a></li>
+                <li class="four-4"><a href="">marketing</a></li>
+                <li class="five-5"><a href="">writer</a></li>
+
+            </ul>
+        </div>
+
+    </div>
+
+
+    <div class="start-img">
+        <img src="./assets/start-imag.png" alt="">
+    </div>
+
+
+    <div class="big-heading">
+        <p class="h1"><span>get hired in 4</span> quick easy steps (coming soon) </p>
+        <p class="line">the quickest and the most effective way to get hired by the top firm</p>
+    </div>
+
+
+    <div class="container-of-card">
+        <div class="card">
+            <a class="card-body" href="">
+                <section> <i class="fa-solid fa-user-plus"></i></section>
+                <p class="card-heading">create an account</p>
+                <p class="card-summary">Join our vibrant community. Create your account and unlock boundless
+                    opportunities.
+                </p>
+            </a>
+
+            <a class="card-body" href="">
+                <section> <i class="fa-solid fa-magnifying-glass"></i></section>
+                <p class="card-heading">search a job</p>
+                <p class="card-summary">Discover your ideal job. Our intuitive search feature makes job hunting
+                    effortless.
+                </p>
+            </a>
+
+            <a class="card-body" href="">
+                <section> <i class="fa-solid fa-file-import"></i></section>
+                <p class="card-heading">Upload CV/Resume</p>
+                <p class="card-summary">Showcase your expertise. Upload your CV or resume and stand out to employers.
+                </p>
+            </a>
+
+            <a class="card-body" href="">
+                <section> <i class="fa-solid fa-briefcase"></i></section>
+                <p class="card-heading">get a job</p>
+                <p class="card-summary">Achieve your career goals. Apply for jobs and embark on your next adventure.
+                </p>
+            </a>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="sec-big-heading">
+        <div class="big-heading">
+            <p class="h1"><span>Find Your Dream Job</span> Super Fast Ever. </p>
+            <p class="line">We are here to help jobseekers connect with organizer and companies. We are provides</p>
+            <p class="line">the best opportunities to professional people.</p>
+        </div>
+
+
+    </div>
+
+
+    <div class="banner">
+
+        <img src="./assets/banner-2.webp" alt="">
+    </div>
+
+
+
+
+
+
+    <div class="big-heading option">
+        <p class="h1">countless career options <span>are you watingfor you to</span> </p>
+        <p class="h1"><span>explore</span> </p>
+
+    </div>
+
+
+
+
+
+
+
+    <div class="container-of-card">
+        <div class="card">
+            <a class="card-body card-body-2 " href="">
+                <section><i class="fa-solid fa-square-poll-vertical"></i></section>
+                <p class="card-heading">marketing & sales</p>
+                <p class="card-summary">297 jobs
+                </p>
+            </a>
+
+            <a class="card-body card-body-2 " href="">
+                <section> <i class="fa-solid fa-square-poll-vertical"></i></section>
+                <p class="card-heading">development</p>
+                <p class="card-summary">303 jobs
+                </p>
+            </a>
+
+            <a class="card-body card-body-2" href="">
+                <section> <i class="fa-solid fa-square-poll-vertical"></i></section>
+                <p class="card-heading">arts & illustration</p>
+                <p class="card-summary">105 jobs
+                </p>
+            </a>
+
+            <a class="card-body  card-body-2 " href="">
+                <section><i class="fa-solid fa-square-poll-vertical"></i></section>
+                <p class="card-heading">animation</p>
+                <p class="card-summary">65 jobs
+                </p>
+            </a>
+
+        </div>
+    </div>
+
+
+
+    <div class="container-of-card">
+        <div class="card">
+            <a class="card-body card-body-2 " href="">
+                <section><i class="fa-solid fa-square-poll-vertical"></i></section>
+                <p class="card-heading">management</p>
+                <p class="card-summary">51 jobs
+                </p>
+            </a>
+
+            <a class="card-body card-body-2 " href="">
+                <section> <i class="fa-solid fa-square-poll-vertical"></i></section>
+                <p class="card-heading">UI/UX design</p>
+                <p class="card-summary">63 jobs
+                </p>
+            </a>
+
+            <a class="card-body card-body-2" href="">
+                <section> <i class="fa-solid fa-square-poll-vertical"></i></section>
+                <p class="card-heading">HR & finance</p>
+                <p class="card-summary">35 jobs
+                </p>
+            </a>
+
+            <a class="card-body  card-body-2 " href="">
+                <section><i class="fa-solid fa-square-poll-vertical"></i></section>
+                <p class="card-heading">SEO</p>
+                <p class="card-summary">45 jobs
+                </p>
+            </a>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="big-heading option2">
+        <p class="h1"> latest and top <span>jobs openings</span> </p>
+
+
+    </div>
+
+
+    <div class="main-add-container">
+        <div class="second-main-add-container">
+            <div class="add-container">
+                <div class="add-1st">
+                    <p class="add-line">GSNJ Carobridge Solutions PVT. LTD</p>
+                    <img src="./assets/logogggg.jpg" alt="" class="add-img">
+                </div>
+                <p class="add-line-2">digital marketing specialist</p>
+                <p class="add-line-3 ">no salary mention</p>
+                <p class="add-line-4 ">karachi , pakistan</p>
+                <div class="add-bottom">
+                    <p class="bot-line-1">10 hours ago</p>
+                    <p class="bot-line-2">0 views</p>
+                </div>
+            </div>
+
+
+
+            <div class="add-container">
+                <div class="add-1st">
+                    <p class="add-line">GSNJ Carobridge Solutions PVT. LTD</p>
+                    <img src="./assets/logogggg.jpg" alt="" class="add-img">
+                </div>
+                <p class="add-line-2">wordpress/shopify developer</p>
+                <p class="add-line-3 ">no salary mention</p>
+                <p class="add-line-4 ">karachi , pakistan</p>
+                <div class="add-bottom">
+                    <p class="bot-line-1">4 hours ago</p>
+                    <p class="bot-line-2">7 views</p>
+                </div>
+            </div>
+
+
+
+            <div class="add-container">
+                <div class="add-1st">
+                    <p class="add-line">GSNJ Carobridge Solutions PVT. LTD</p>
+                    <img src="./assets/logogggg.jpg" alt="" class="add-img">
+                </div>
+                <p class="add-line-2">webFlow developer</p>
+                <p class="add-line-3 ">no salary mention</p>
+                <p class="add-line-4 ">karachi , pakistan</p>
+                <div class="add-bottom">
+                    <p class="bot-line-1">12 hours ago</p>
+                    <p class="bot-line-2">7 views</p>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+    <!-- second card row -->
+    <div class="main-add-container  second-main-add ">
+        <div class="second-main-add-container">
+            <div class="add-container">
+                <div class="add-1st">
+                    <p class="add-line">GSNJ Carobridge Solutions PVT. LTD</p>
+                    <img src="./assets/logogggg.jpg" alt="" class="add-img">
+                </div>
+                <p class="add-line-2">senior UI/UX</p>
+                <p class="add-line-3 ">no salary mention</p>
+                <p class="add-line-4 ">karachi , pakistan</p>
+                <div class="add-bottom">
+                    <p class="bot-line-1">7 hours ago</p>
+                    <p class="bot-line-2">0 views</p>
+                </div>
+            </div>
+
+
+
+            <div class="add-container">
+                <div class="add-1st">
+                    <p class="add-line">GSNJ Carobridge Solutions PVT. LTD</p>
+                    <img src="./assets/logogggg.jpg" alt="" class="add-img">
+                </div>
+                <p class="add-line-2">assistant project manager</p>
+                <p class="add-line-3 ">no salary mention</p>
+                <p class="add-line-4 ">karachi , pakistan</p>
+                <div class="add-bottom">
+                    <p class="bot-line-1">10 hours ago</p>
+                    <p class="bot-line-2">5 views</p>
+                </div>
+            </div>
+
+
+
+            <div class="add-container">
+                <div class="add-1st">
+                    <p class="add-line">GSNJ Carobridge Solutions PVT. LTD</p>
+                    <img src="./assets/logogggg.jpg" alt="" class="add-img">
+                </div>
+                <p class="add-line-2">lareval developer</p>
+                <p class="add-line-3 ">no salary mention</p>
+                <p class="add-line-4 ">karachi , pakistan</p>
+                <div class="add-bottom">
+                    <p class="bot-line-1">2 hours ago</p>
+                    <p class="bot-line-2">0 views</p>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="bot-container">
+
+        <div class="bot-container-2">
+
+            <div class="fram-1">
+                <img src="./assets/fram-1.png" alt="" class="f1">
+                <p class="f1-h1">connect with people</p>
+                <p class="f1-h2">who can help</p>
+                <button class="f1-b1">coming soon</button>
+            </div>
+
+
+
+
+            <div class="fram-2">
+                <img src="./assets/fram-2.png" alt="" class="f2">
+                <p class="f2-h1"><span>post your job </span>for </p>
+                <p class="f2-h2">who can help</p>
+                <button class="f2-b2">coming soon</button>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- bottom -->
+
+    <div class="bottom">
+
+        <div class="inner-bottom">
+            <div class="bottom-one">
+                <p>HiringMine connects employer and job seekers, <br>
+                    where employers are the source of the resources and the
+                    job <br>
+                    seeker can find and apply for their targeted job.</p>
+
+
+                <p class="bot-one-2">Follow us</p>
+                <ul>
+                    <li class="logo-f"><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                    <li class="logo-w"><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
+                    <li class="logo-i"><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    <li class="logo-l"><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+
+                </ul>
+
+            </div>
+            <div class="bottom-two ">
+                <p class="bot-2-p">contact us</p>
+                <p> <i class="fa-regular fa-envelope"></i> portal.hiringmine@gmail.com</p>
+            </div>
+
+                 
+        </div>
+
+    <div class="end-line">
+        <p>Privacy Policy || Terms and Condition</p>
+        <p>Copyright Hiringmine 2024. All Rights Reserved</p>
+    </div>
+    </div>
+
+
+
+
+
+    <script>
+
+        const light = document.getElementById('light');
+        const bodyy = document.getElementById("body")
+        function mode() {
+            bodyy.style.backgroundColor = ('black')
+        }
+
+
+
+
+    </script>
+
+</body>
+
+
+
+
+
+</html>
